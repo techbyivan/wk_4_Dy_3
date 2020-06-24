@@ -44,13 +44,60 @@
 					</form>
 				</section>
 			</div>
+			
+			
+			
+			
+			
 			<script>
+
+				const createCard = () => {
+				  
 				console.log(document.getElementsByTagName("p"));
 				console.log(document.getElementsByClassName("extra"));
 				console.log(document.getElementById("first-name"));
 				console.log(document.querySelector("extra"));
 				console.log(document.querySelectorAll("extra"));
+				// newh2.innerText = title
+
+				// let aHtmlCollection = document.getElementsByClassName("extra");
+				// let item_ = aNodeList_[0];
+
+				// item_.parentNode.removeChild(item);
+
+				// console.log(aNodeList);
+				// console.log(aHtmlCollection);
+				// console.log(item_);
+
+				let newSection = document.createElement("section");
+				let newH2 = document.createElement("h2");
+				newH2.innerText = "Great Things To Come";
+
+				let newP = document.createElement("p");
+				newP.append("content");
+
+				let newP2 = document.createElement("p");
+				newP2.append("extra");
+
+				newSection.append(newH2, newP);
+				console.log(newSection);
+
+				newP2.setAttribute("class", "extra");
+
+				let docBody = document.getElementById("mainContent");
+				docBody.append(newSection);
+			}
+				createCard('wow')
+				createCard('sometimes i wonder')
+				createCard()
+
 			</script>
+
+
+
 		</body>
 	</html>
 </DOCTYPE>
+
+
+
